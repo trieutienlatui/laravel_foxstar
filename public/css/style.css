@@ -1,0 +1,1205 @@
+/* Background Styles */
+.page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('image/Detail.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Điều chỉnh vị trí và kích thước background */
+.background-adjust {
+    /* Điều chỉnh vị trí */
+    --bg-top: 0;
+    --bg-left: 0;
+    
+    /* Điều chỉnh kích thước */
+    --bg-width: 100%;
+    --bg-height: 100%;
+    
+    /* Điều chỉnh scale */
+    --bg-scale-x: 1;
+    --bg-scale-y: 1;
+    
+    transform: 
+        translate(var(--bg-left), var(--bg-top)) 
+        scale(var(--bg-scale-x), var(--bg-scale-y));
+    transform-origin: center;
+}
+
+/* Container chính */
+.main-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Media Queries cho responsive */
+@media (max-width: 1440px) {
+    .background-adjust {
+        --bg-scale-x: 0.9;
+        --bg-scale-y: 0.9;
+    }
+}
+
+@media (max-width: 1200px) {
+    .background-adjust {
+        --bg-scale-x: 0.8;
+        --bg-scale-y: 0.8;
+    }
+}
+
+@media (max-width: 992px) {
+    .background-adjust {
+        --bg-scale-x: 0.7;
+        --bg-scale-y: 0.7;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-adjust {
+        --bg-scale-x: 0.6;
+        --bg-scale-y: 0.6;
+    }
+}
+
+/* Các class tiện ích để điều chỉnh background */
+.bg-move-up { --bg-top: -50px; }
+.bg-move-down { --bg-top: 50px; }
+.bg-move-left { --bg-left: -50px; }
+.bg-move-right { --bg-left: 50px; }
+.bg-scale-up { 
+    --bg-scale-x: 1.1;
+    --bg-scale-y: 1.1;
+}
+.bg-scale-down {
+    --bg-scale-x: 0.9;
+    --bg-scale-y: 0.9;
+}
+
+        @font-face {
+            font-family: 'KD Hidayatullah';
+            src: url('../font/KD-Hidayatullah-v2.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SVN Aptima';
+            src: url('../font/SVN-Aptima.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background: url('/image/Home page.png') no-repeat center center;
+            color: white;
+            font-family: 'SVN Aptima', sans-serif;
+        }
+
+        .header {
+            background: url("/image/newBG.png") no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logos-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            z-index: 3;
+        }
+
+        .logo {
+            height: 40px;
+            position: relative;
+            top: 20px;
+            width: auto;
+        }
+
+        .vector-side {
+
+            position: absolute;
+            width: 180px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .vector-left {
+            position: absolute;
+            left: 0px;
+            top: 560px;
+            width: 520px;
+        }
+
+        .vector-right {
+            right: 0px;
+            top: 560px;
+            width: 355px;
+
+        }
+
+        .frame-top {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1920px;
+        }
+
+        .foxstar-logo {
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            max-width: 80vw;
+            min-width: 160px;
+            z-index: 2;
+        }
+
+        @media (max-width: 1280px) {
+            .foxstar-logo {
+                width: 600px;
+                max-width: 60vw;
+            }
+        }
+        @media (max-width: 900px) {
+            .foxstar-logo {
+                width: 420px;
+                max-width: 50vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .foxstar-logo {
+                width: 180px;
+                max-width: 80vw;
+            }
+        }
+        @media (max-width: 400px) {
+            .foxstar-logo {
+                width: 120px;
+                max-width: 90vw;
+            }
+        }
+
+        .decorative-corner {
+            position: absolute;
+            width: 140px;
+        }
+
+        .corner-bottom-left {
+            bottom: 190px;
+            left: 170px;
+        }
+
+        .corner-bottom-right {
+            bottom: 200px;
+            right: 240px;
+            transform: scaleX(-1);
+        }
+
+        /* New container styles */
+        .decorative, .flower {
+            position: absolute;
+            width: 100%;
+            height: 0;
+        }
+        .decorative img {
+            position: absolute;
+            height: auto;
+            transition: all 0.3s ease;
+        }
+
+        .flower img {
+            position: absolute;
+            width: 140px;
+            height: auto;
+        }
+
+
+        .decorative-left {
+            left: 0;
+            top: 0;
+            margin-left: 0;
+        }
+
+        .decorative-right {
+            right: 0;
+            top: 0;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .flower-left {
+            left: 0;
+            top: 0;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .flower-right {
+            right: 0;
+            top: 0;
+            margin-left: auto;
+            margin-right: 2%;
+            margin-top: 2%;
+        }
+
+        .header-text {
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #FDE9A7;
+            font-family: 'SVN Aptima', sans-serif;
+            font-size: 24px;
+            width: 95%;
+            max-width: 1200px;
+            line-height: 1.5;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100vw;
+            max-width: 100vw;
+            min-width: 320px;
+            min-height: 120px;
+            height: 18vh;
+            box-sizing: border-box;
+        }
+
+        .header-title {
+            color: #FDE9A7;
+            font-family: 'SVN-Aptima', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            top: -150px;
+        }
+
+        .section-title {
+            color: #FDE9A7;
+            font-family: 'KD Hidayatullah', sans-serif;
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 40px;
+            position: relative;
+            top: 30px;
+        }
+
+        .section-description {
+            color: #FDE9A7;
+            font-family: 'SVN-Aptima', sans-serif;
+            text-align: center;
+            margin-bottom: 3rem;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        .card-container {
+            padding: 1rem 0;
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .card-container .row {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            margin: 0 auto;
+            gap: 0;
+        }
+
+        .foxstar-card {
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            width: 180px; /* Giảm kích thước card */
+            position: relative;
+            /* Sử dụng lại margin âm cho layout so le truyền thống */
+            margin-right: 0;
+            margin-left: 0;
+            flex: 0 0 auto;
+        }
+
+        .card-link {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .card-image {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.5s ease;
+        }
+
+        .hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            object-fit: cover;
+        }
+
+        .card-link:hover .hover-image {
+            opacity: 1;
+        }
+
+        .card-link:hover .default-image {
+            opacity: 0;
+        }
+
+        .foxstar-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            height: 100%;
+        }
+
+        .foxstar-card:nth-child(4) {
+            margin-right: 0;
+            margin-left: -5px;
+        }
+
+        .foxstar-card:hover {
+            transform: translateY(-10px);
+            z-index: 5;
+        }
+
+        .foxstar-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        /* Vị trí tùy chỉnh cho từng card */
+        .foxstar-card:nth-child(2) {
+            margin-top: 40px;
+        }
+
+        .foxstar-card:nth-child(4) {
+            margin-top: 40px;
+        }
+
+        .foxstar-card:nth-child(1) {
+            margin-right: -65px;
+        }
+
+        .section-center .row {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin: 0 auto;
+            width: fit-content;
+        }
+
+        .section-center .foxstar-card {
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            width: 280px;
+            position: relative;
+            margin-right: -60px;
+            flex: 0 0 auto;
+        }
+
+        .section-center .foxstar-card:first-child {
+            margin-right: -65px;
+        }
+
+        .section-center .foxstar-card:nth-child(2) {
+            margin-top: 40px;
+        }
+
+        .section-center .foxstar-card:last-child {
+            margin-right: 0;
+            margin-top: 0;
+        }
+
+        .section-center .foxstar-card:hover {
+            transform: translateY(-10px);
+            z-index: 5;
+        }
+
+        .section-center .foxstar-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        /* Mobile Styles */
+        @media  (max-width: 767px) {
+            .header-title {
+                font-size: 1rem;
+                top: -70%;
+                padding: 0 15px;
+                margin-bottom: 10rem;
+            }
+
+            .foxstar-logo {
+                width: 300px;
+                max-width: 80vw;
+                top: 37%;
+            }
+            .header-text {
+                font-size: 1rem;
+                top: 44%;
+                width: 100%;
+            }
+
+            .vector-side {
+                width: 120px !important;
+            }
+            .vector-left {
+                left: -2.5%;
+                top: 95%;
+                width: 50% !important;
+            }
+            .vector-right {
+                right: -2.5%;
+                top: 95%;
+                width: 35% !important;
+            }
+            .decorative-corner {
+                width: 15% !important;
+            }
+            .corner-bottom-left {
+                bottom: 10%;
+                left: 20%;
+            }
+
+            .corner-bottom-right {
+                bottom: 11%;
+                right: 15%;
+            }
+
+            .section-title {
+                font-size: 24px;
+                padding: 2rem 0;
+                top: 0;
+            }
+
+            .section-description {
+                font-size: 14px;
+                padding: 0 15px;
+                br { display: none; }
+            }
+
+        }   
+            .decorative-left {
+                display: block;
+                position: relative;
+                left: 0px;
+                top: -176px;
+                width: 200px !important;
+                height: auto;
+                z-index: 1;
+            }
+            .decorative-right {
+                display: block;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                width: 150px !important;
+                height: auto;
+                z-index: 2;
+            }
+            .flower-left {
+                position: absolute;
+                left: 60px;
+                bottom: 0px;
+                width: 60px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+            .flower-right {
+                position: absolute;
+                right: 95px;
+                bottom: 0px;
+                width: 60px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+
+            .footer .container {
+        position: relative;
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: -60px;
+    }
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .footer .col-md-4 {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .footer .col-md-4:last-child {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .footer .social-icons {
+        margin: 10px 0 10px 0;
+        gap: 12px;
+    }
+    .footer .copyright {
+        text-align: center;
+        padding: 10px 0 0 0;
+        position: static;
+        width: 100%;
+        font-size: 13px;
+    }
+
+        /* Tablet Styles */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .header-title {
+                font-size: 1.7rem;
+                top: -120px;
+            }
+
+            .foxstar-logo {
+                width: 505px;
+                max-width: 100%;
+                top: 40%;
+            }
+            .header-text {
+                font-size: 1.6rem;
+                top: 49%;
+                width: 100%;
+            }
+
+            .vector-side {
+                width: 200px;
+            }
+
+            .vector-left {
+                left: -3%;
+                top: 93%;
+                width: 38% !important;
+            }
+
+            .vector-right {
+                right: -3%;
+                top: 92%;
+                width: 30% !important;
+            }
+
+            .decorative-corner {
+                width: 100px;
+            }
+
+            .corner-bottom-left {
+                bottom: 12%;
+                left: 13%;
+            }
+
+            .corner-bottom-right {
+                bottom: 12%;
+                right: 17%;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }x
+
+            .section-description {
+                font-size: 15px;
+            }
+
+            .foxstar-card {
+                width: calc(50% - 20px);
+                margin-right: -30px;
+            }
+            .decorative-left {
+                display: block;
+                position: relative;
+                left: 0px;
+                top: -176px;
+                width: 300px !important;
+                height: auto;
+                z-index: 1;
+            }
+            .decorative-right {
+                display: block;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                width: 203px !important;
+                height: auto;
+                z-index: 2;
+            }
+            .flower-left {
+                position: absolute;
+                left: 175px;
+                bottom: 0px;
+                width: 85px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+            .flower-right {
+                position: absolute;
+                right: 175px;
+                bottom: 0px;
+                width: 85px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 1024px) and (max-width: 1919px) {
+            .header-title {
+                font-size: 2.5rem;
+                top: -150px;
+            }
+
+            .foxstar-logo {
+                width: 670px;
+                max-width: 100%;
+                top: 43%;
+            }
+            .header-text {
+                font-size: 2rem;
+                top: 55%;
+                width: 100%;
+            }
+            .vector-side {
+                width: 280px;
+            }
+
+            .vector-left {
+                left: 0;
+                top: 84%; 
+                width: 35% !important;
+            }
+
+            .vector-right {
+                right: 0;
+                top: 84%;
+                width: 23% !important;
+            }
+
+            .decorative-corner {
+                width: 120px;
+            }
+
+            .corner-bottom-left {
+                bottom: 24%; 
+                left: 12%;   
+            }
+
+            .corner-bottom-right {
+                bottom: 22%; 
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .section-description {
+                font-size: 16px;
+            }
+
+            .foxstar-card {
+                width: 280px;
+                margin-right: -60px;
+            }
+            .decorative-left {
+                display: block;
+                position: relative;
+                left: 0px;
+                top: -176px;
+                width: 450px !important;
+                height: auto;
+                z-index: 1;
+            }
+            .decorative-right {
+                display: block;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                width: 290px !important;
+                height: auto;
+                z-index: 2;
+            }
+            .flower-left {
+                position: absolute;
+                left: 265px;
+                bottom: 0px;
+                width: 120px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+            .flower-right {
+                position: absolute;
+                right: 265px;
+                bottom: 0px;
+                width: 120px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+        }
+
+        .quote-text {
+            font-family: 'SVN-Aptima', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: #FDE9A7;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .quote-text br {
+            display: none;
+        }
+
+        .quote-text span {
+            display: block;
+            white-space: nowrap;
+            position: relative;
+            clip-path: inset(0 100% 0 0);
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: fit-content;
+        }
+        /* Full HD Styles */
+        @media (min-width: 1920px) {
+            .container {
+                max-width: 1800px;
+                padding: 0 50px;
+            }
+
+            .header-title {
+                font-size: 3rem;
+                top: -180px;
+            }
+
+            .foxstar-logo {
+                width: 830px;
+                max-width: 100%;
+                top: 43%;
+            }
+            .header-text {
+                font-size: 2.5rem;
+                top: 55%;
+                width: 100%;
+            }
+            .vector-side {
+                width: 355px;
+            }
+
+            .vector-left {
+                left: 0;
+                top: 83%; 
+                width: 34% !important;
+            }
+
+            .vector-right {
+                right: 0;
+                top: 84%; 
+                width: 24% !important;
+
+            }
+
+            .decorative-corner {
+                width: 140px;
+            }
+
+            .corner-bottom-left {
+                bottom: 24%;
+                left: 9%; 
+                width: 10%;   
+            }
+
+            .corner-bottom-right {
+                bottom: 21%; 
+                right: 17%; 
+                width: 10%; 
+            }
+
+            .section-title {
+                font-size: 40px;
+            }
+
+            .section-description {
+                font-size: 18px;
+            }
+
+            .card-container .foxstar-card {
+                width: 360px;
+                margin-right: -65px;
+            }
+            .card-container .foxstar-card:last-child {
+                margin-right: 0;
+            }
+
+            .quote-container {
+                max-width: 1920px;
+                padding: 70px 0;
+            }
+            
+            .quote-text {
+                font-size: 1.4rem;
+            }
+            
+            .decorative-left {
+                display: block;
+                position: relative;
+                left: 0px;
+                top: -176px;
+                width: 530px !important;
+                height: auto;
+                z-index: 1;
+            }
+            .decorative-right {
+                display: block;
+                position: relative;
+                right: 0px;
+                top: 0px;
+                width: 333px !important;
+                height: auto;
+                z-index: 2;
+            }
+            .flower-left {
+                position: absolute;
+                left: 265px;
+                bottom: 0px;
+                width: 150px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+            .flower-right {
+                position: absolute;
+                right: 265px;
+                bottom: 0px;
+                width: 150px;
+                height: auto;
+                margin: 0;
+                z-index: 10;
+            }
+        }
+
+
+
+        .quote-container p:nth-of-type(1).reveal span:nth-child(1) {
+            animation: typewriter-clip 5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+            animation-delay: 0s;
+        }
+
+        .quote-container p:nth-of-type(1).reveal span:nth-child(2) {
+            animation: typewriter-clip 5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+            animation-delay: 2.3s;
+        }
+
+        .quote-container p:nth-of-type(1).reveal span:nth-child(3) {
+            animation: typewriter-clip 5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+            animation-delay: 4.3s;
+        }
+
+        .quote-container p:nth-of-type(2).reveal span:nth-child(1) {
+            animation: typewriter-clip 5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+            animation-delay: 5.5s;
+        }
+
+        .quote-container p:nth-of-type(2).reveal span:nth-child(2) {
+            animation: typewriter-clip 5s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+            animation-delay: 6.5s;
+        }
+
+        .quote-container p.fw-bold {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .quote-container p.fw-bold.reveal {
+            animation: fadeInUp 2s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+            animation-delay: 8.8s;
+        }
+
+        @keyframes typewriter-clip {
+            from {
+                clip-path: inset(0 100% 0 0);
+            }
+            to {
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            background: #07013b;
+            position: relative;
+            margin-top: -176px;
+            padding-top: 30px;
+            padding-bottom: -50px;
+        }
+
+        .footer .container {
+            position: relative;
+            width: 100%;
+            padding: 0 15px;
+            margin-bottom: -60px;
+        }
+
+        .footer .copyright {
+            text-align: center;
+            padding: 10px 0 0 0;
+            position: static;
+            width: 100%;
+            font-size: 14px;
+            color: #fff;
+            display: block;
+        }
+
+        .footer .col-md-4:last-child {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .decorative-image {
+            position: absolute;
+            width: 150px;
+            height: auto;
+        }
+
+        .image-top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .image-top-right {
+            top: 20px;
+            right: 20px;
+        }
+
+        .image-center-left {
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
+        .image-center-right {
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .image-bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .image-bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .header-welcome-text {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #FDE9A7;
+            font-family: 'KD Hidayatullah', sans-serif;
+            font-size: 36px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer .social-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+            margin: 15px 0 15px 0;
+        }
+
+        .social-icons a {
+            display: block;
+            margin-bottom: 0; /* Bỏ margin-bottom */
+            line-height: 1; /* Giảm line-height */
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle; /* Đảm bảo icon được căn chỉnh tốt */
+        }
+        /* Footer desktop/tablet: 3 cột ngang, social dọc sát phải */
+        @media (min-width: 768px) {
+            .footer .row {
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+            .footer .col-md-4 {
+                width: 33.3333%;
+                margin-bottom: 0;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .footer .col-md-4:first-child {
+                align-items: flex-start;
+            }
+            .footer .col-md-4:nth-child(2) {
+                align-items: center;
+                text-align: center;
+            }
+            .footer .col-md-4:last-child {
+                align-items: flex-end;
+                text-align: right;
+                justify-content: flex-end;
+                display: flex;
+                flex-direction: column;
+            }
+            .footer .footer-logo {
+                margin-bottom: 8px;
+            }
+            .footer .social-icons {
+                display: flex;
+                flex-direction: column !important;
+                align-items: flex-end;
+                gap: 16px;
+                margin: 10px 0 10px 0;
+            }
+            .footer .copyright {
+                text-align: center;
+                padding: 10px 0 0 0;
+                position: static;
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+
+        /* Decorative & Flower Responsive - Remove position absolute/relative, use % for flexible layout */
+       /* .decorative-left, .decorative-right, .flower-left, .flower-right {
+            position: absolute;
+            display: block;
+            height: auto;
+            margin-top: 0;
+        }*/
+        .decorative-left {
+            width: 30%;
+            margin-left: 0 !important;
+            margin-right: auto !important;
+            margin-top: -13vw;
+            margin-bottom: 0 !important; /* Không dùng margin âm, không đẩy footer */
+        }
+        .decorative-right {
+            width: 20%;
+            margin-left: auto !important;
+            margin-right: 0 !important;
+            margin-top: -20vw;
+            margin-bottom: 177px !important; /* Không dùng margin âm, không đẩy footer */
+        }
+ /*       .flower-left, .flower-right {
+            position: absolute;
+            bottom: 1vw;
+            width: 7vw;
+            height: auto;
+            margin: 0;
+            z-index: 10;
+        }
+        .flower-left {
+            left: 2vw;
+        }
+        .flower-right {
+            right: 2vw;
+        }*/
+        .decorative-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; /* hoặc center nếu muốn căn giữa */
+            width: 100%;
+            position: relative;
+        }
+        .decorative-left, .decorative-right {
+            position: relative;
+            margin: 0;
+        }
+        .card-swiper .swiper-slide.foxstar-card {
+            width: 250px !important;   /* Kích thước nhỏ lại như các section khác */
+            max-width: 250px !important;
+            min-width: 250px !important;
+        }
+
+        .card-swiper {
+            padding-left: 120px; /* Đẩy card đầu tiên sang phải để thẳng hàng với các section khác */
+        }
