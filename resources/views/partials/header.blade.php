@@ -16,8 +16,8 @@
         50 cá nhân xuất sắc FPT Telecom năm 2024
     </div>
 
-    <img src="{{ secure_ asset('image/Vector Smart Object.png') }}" class="decorative-corner corner-bottom-left">
-    <img src="{{ secure_ asset('image/Vector Smart Object.png') }}" class="decorative-corner corner-bottom-right">
+    <img src="{{ secure_asset('image/Vector Smart Object.png') }}" class="decorative-corner corner-bottom-left">
+    <img src="{{ secure_asset('image/Vector Smart Object.png') }}" class="decorative-corner corner-bottom-right">
 
     <div class="header-content">
         <h1 class="header-title">LỄ TÔN VINH TOP 50 FPT TELECOM 2024</h1>

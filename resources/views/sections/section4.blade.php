@@ -9,24 +9,24 @@
                 <div class="foxstar-card">
                     <a href="detail.html" class="card-link">
                         <div class="card-image">
-                            <img src="{{ asset('image/Group 53.png') }}" alt="Foxstar 1" class="default-image">
-                            <img src="{{ asset('image/quanAP.png') }}" alt="Profile" class="hover-image">
+                            <img src="{{  secure_asset('image/Group 53.png') }}" alt="Foxstar 1" class="default-image">
+                            <img src="{{  secure_asset('image/quanAP.png') }}" alt="Profile" class="hover-image">
                         </div>
                     </a>
                 </div>
                 <div class="foxstar-card">
                     <a href="detail.html" class="card-link">
                         <div class="card-image">
-                            <img src="{{ asset('image/Group 54.png') }}" alt="Foxstar 2" class="default-image">
-                            <img src="{{ asset('image/soobin.png') }}" alt="Profile" class="hover-image">
+                            <img src="{{  secure_asset('image/Group 54.png') }}" alt="Foxstar 2" class="default-image">
+                            <img src="{{  secure_asset('image/soobin.png') }}" alt="Profile" class="hover-image">
                         </div>
                     </a>
                 </div>
                 <div class="foxstar-card">
                     <a href="detail.html" class="card-link">
                         <div class="card-image">
-                            <img src="{{ asset('image/Group 55.png') }}" alt="Foxstar 3" class="default-image">
-                            <img src="{{ asset('image/HRK.png') }}" alt="Profile" class="hover-image">
+                            <img src="{{  secure_asset('image/Group 55.png') }}" alt="Foxstar 3" class="default-image">
+                            <img src="{{  secure_asset('image/HRK.png') }}" alt="Profile" class="hover-image">
                         </div>
                     </a>
                 </div>

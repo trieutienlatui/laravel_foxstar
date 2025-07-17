@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="image/image 43.png" alt="Fox News Logo" class="footer-logo">
+                        <img src="{{ asset('image/image 43.png') }}" alt="Fox News Logo" class="footer-logo">
                         <p>Kênh thông tin nội bộ FPT Telecom</p>
                         <p>Chịu trách nhiệm nội dung: Phòng Truyền thông Nội bộ FPT Telecom</p>
                     </div>
@@ -14,9 +14,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="social-icons">
-                            <a href="#"><img src="image/logo-facebook.png" alt="Facebook"></a>
-                            <a href="#"><img src="image/tik-tok 1.png" alt="TikTok"></a>
-                            <a href="#"><img src="image/logo-web.png" alt="Website"></a>
+                            <a href="#"><img src="{{ secure_asset('image/logo-facebook.png') }}" alt="Facebook"></a>
+                            <a href="#"><img src="{{ secure_asset('image/tik-tok 1.png') }}" alt="TikTok"></a>
+                            <a href="#"><img src="{{ secure_asset('image/logo-web.png') }}" alt="Website"></a>
                         </div>
                     </div>
                 </div>

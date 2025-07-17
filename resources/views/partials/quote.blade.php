@@ -14,8 +14,8 @@
         </div>
 
 <div class="decorative-row">
-    <img src="{{ asset('image/Vector Smart Object1223 1.png') }}" class="decorative-left">
-    <img src="{{ asset('image/Vector Smart Object1223 2.png') }}" class="decorative-right">
-    <img src="{{ asset('image/Vector Smart Object.png') }}" class="flower-left">
-    <img src="{{ asset('image/Vector Smart Object1.png') }}" class="flower-right">
+    <img src="{{ secure_ asset('image/Vector Smart Object1223 1.png') }}" class="decorative-left">
+    <img src="{{ secure_ asset('image/Vector Smart Object1223 2.png') }}" class="decorative-right">
+    <img src="{{ secure_ asset('image/Vector Smart Object.png') }}" class="flower-left">
+    <img src="{{ secure_ asset('image/Vector Smart Object1.png') }}" class="flower-right">
 </div>

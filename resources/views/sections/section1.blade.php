@@ -9,64 +9,64 @@
                     <div class="swiper-slide foxstar-card foxstar-card-s1">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 53.png') }}" alt="Foxstar 1" class="default-image">
-                                <img src="{{ asset('image/quanAP.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 53.png') }}" alt="Foxstar 1" class="default-image">
+                                <img src="{{ secure_ asset('image/quanAP.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s2">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 54.png') }}" alt="Foxstar 2" class="default-image">
-                                <img src="{{ asset('image/soobin.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{ secure_ asset('image/Group 54.png') }}" alt="Foxstar 2" class="default-image">
+                                <img src="{{  secure_asset('image/soobin.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s3">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 55.png') }}" alt="Foxstar 3" class="default-image">
-                                <img src="{{ asset('image/HRK.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 55.png') }}" alt="Foxstar 3" class="default-image">
+                                <img src="{{  secure_asset('image/HRK.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s4">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 56.png') }}" alt="Foxstar 4" class="default-image">
-                                <img src="{{ asset('image/imgAni.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 56.png') }}" alt="Foxstar 4" class="default-image">
+                                <img src="{{  secure_asset('image/imgAni.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s5">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 53.png') }}" alt="Foxstar 5" class="default-image">
-                                <img src="{{ asset('image/quanAP.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 53.png') }}" alt="Foxstar 5" class="default-image">
+                                <img src="{{  secure_asset('image/quanAP.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s6">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 54.png') }}" alt="Foxstar 6" class="default-image">
-                                <img src="{{ asset('image/soobin.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 54.png') }}" alt="Foxstar 6" class="default-image">
+                                <img src="{{  secure_asset('image/soobin.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s7">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 55.png') }}" alt="Foxstar 7" class="default-image">
-                                <img src="{{ asset('image/HRK.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 55.png') }}" alt="Foxstar 7" class="default-image">
+                                <img src="{{  secure_asset('image/HRK.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide foxstar-card foxstar-card-s8">
                         <a href="detail.html" class="card-link">
                             <div class="card-image">
-                                <img src="{{ asset('image/Group 56.png') }}" alt="Foxstar 8" class="default-image">
-                                <img src="{{ asset('image/imgAni.png') }}" alt="Profile" class="hover-image">
+                                <img src="{{  secure_asset('image/Group 56.png') }}" alt="Foxstar 8" class="default-image">
+                                <img src="{{  secure_asset('image/imgAni.png') }}" alt="Profile" class="hover-image">
                             </div>
                         </a>
                     </div>
