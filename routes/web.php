@@ -5,10 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-
-use Illuminate\Support\Facades\Artisan;
-
-Route::get('/generate-key', function () {
-    Artisan::call('key:generate');
-    return '✅ APP_KEY đã được tạo thành công!';
+Route::get('/clear-config', function () {
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    return 'Cleared config & cache';
 });
+
